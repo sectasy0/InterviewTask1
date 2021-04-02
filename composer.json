@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "chillerlan/php-qrcode": "^3.4",
+        "twbs/bootstrap": "^4.6"
+    }
+}
