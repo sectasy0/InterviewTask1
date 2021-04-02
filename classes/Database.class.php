@@ -31,8 +31,8 @@ class Database {
     }
 
     public function insert($email) {
-             // Wprowadzenie danych do bazy
-             $this->query("INSERT INTO users (email) VALUES ('$email')");
+            // Wprowadzenie danych do bazy
+            $this->query("INSERT INTO users (email) VALUES ('$email')");
             
             $domainStr = substr($email, strpos($email, '@') +1);
             $result = $this->fetch("SELECT user_id, (SUBSTRING_INDEX(SUBSTR(email, INSTR(email, '@') + 1),' ', 1)) 
